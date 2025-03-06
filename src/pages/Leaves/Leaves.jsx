@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import LeaveRequestPopup from "../../components//LeaveRequestPopup/LeaveRequestPopup.jsx";
+import "../../styles/pages/Leaves.css";
 
 const Leaves = () => {
   const [showPopup, setShowPopup] = useState(false);

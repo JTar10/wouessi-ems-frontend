@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../../styles/pages/Leaves.css";
 
 const LeaveRequestPopup = ({ onClose }) => {
   const [formData, setFormData] = useState({
