@@ -32,15 +32,6 @@
       transform: translateY(0);
     }
   }
-
-  .popup-content .close {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 20px;
-    cursor: pointer;
-    color: #666;
-  }
   
   .form-group {
     margin-bottom: 15px;
@@ -60,34 +51,11 @@
     background-color: #f9f9f9;
   }
   
-  .form-actions {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-  }
-  
-  button {
-    padding: 10px 15px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 14px;
-  }
-  
-  button[type="submit"] {
-    background-color: #6c5ce7;
-    color: white;
-  }
-  
-  button[type="button"] {
-    background-color: #ccc;
-    color: black;
-  }
-  
   .leaves-page button {
     background-color: #6c5ce7;
     color: white;
     padding: 12px 18px;
+    margin: 10px;
     font-size: 16px;
     border: none;
     border-radius: 8px;
@@ -95,18 +63,3 @@
     margin-top: 20px;
   }
   
-  .apply-leave-btn {
-    background-color: #6c5ce7;
-    color: white;
-    padding: 12px 18px;
-    font-size: 16px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    margin-top: 20px;
-    transition: 0.3s ease-in-out;
-  }
-  
-  .apply-leave-btn:hover {
-    background-color: #4a3cb7;
-  }
