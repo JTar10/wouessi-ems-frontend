@@ -14,7 +14,7 @@
   .popup-content {
     background: white;
     padding: 25px;
-    width: 450px;
+    width: 550px;
     border-radius: 12px;
     text-align: left;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -39,7 +39,6 @@
   
   label {
     display: block;
-    font-weight: bold;
     margin-bottom: 5px;
   }
   
@@ -51,8 +50,8 @@
     background-color: #f9f9f9;
   }
   
-  .leaves-page button {
-    background-color: #6c5ce7;
+  .submit-button {
+    background-color: #3000a1;
     color: white;
     padding: 12px 18px;
     margin: 10px;
@@ -62,4 +61,53 @@
     cursor: pointer;
     margin-top: 20px;
   }
+
+  .close-button {
+    background-color: white;
+    color: #3000a1;
+    border-color: #3000a1;
+    border-width: 2px;
+    padding: 12px 18px;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
   
+  .form-group table {
+    width: "100%"; 
+    border-collapse: "collapse";
+  }
+
+  .leaveType {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .leaves-page select {
+    background-color: white;
+    border-color: #3000a1;
+    color: #3000a1;
+    border-width: 2px;
+    gap: 10px;
+    display: flex;
+  }
+
+  .leaves-page select option {
+    color: black;
+  }
+
+  .supporting-docs-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px; 
+  margin-top: 10px; 
+}
