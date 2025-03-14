@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../../styles/pages/Leaves.css";
+import AttachFile from "../../assets/images/AttachFile.jpg";
 
 const LeaveRequestPopup = ({ onClose }) => {
   const [formData, setFormData] = useState({
@@ -43,7 +44,7 @@ const LeaveRequestPopup = ({ onClose }) => {
             <table>
               <tr>
                 <td>
-                  <h1 style={{marginTop: "50px", marginRight: "15px"}}>Apply for leave</h1>
+                  <h1 style={{marginTop: "30px", marginRight: "15px"}}>Apply for leave</h1>
                 </td>
                 <td>
                   <div class="leaveType" style={{marginTop: "50px"}}>
@@ -61,19 +62,19 @@ const LeaveRequestPopup = ({ onClose }) => {
                   </div>
                 </td>
                 <td>
-                  <p style={{textAlign: "right"}}>text</p>
+                  
                 </td>
               </tr>
               <tr>
                 <td colSpan="3" style={{ width: "100%" }}>
-                  <hr style={{ width: "100%", marginTop: "40px", marginBottom: "30px"}} />
+                  <hr style={{ width: "100%", marginTop: "40px", marginBottom: "30px", opacity: 0.5}} />
                 </td>
               </tr>
               <tr>
                 <td colSpan="3" style={{ width: "100%" }}>
                   <div className="form-group" style={{ width: "100%"}}>
-                    <label>Employee's name</label>
-                    <textarea style={{backgroundColor: "white"}}
+                    <label className="field-labels"><b>Employee's name</b></label>
+                    <textarea style={{backgroundColor: "white", resize: "none", height: "1.2em", width: "100%"}}
                       name="emoloyeeName"
                       value={formData.employeeName}
                       onChange={handleChange}
@@ -85,7 +86,7 @@ const LeaveRequestPopup = ({ onClose }) => {
               <tr>
                 <td colSpan="1" style={{ width: "45%" }}>
                   <div className="form-group">
-                    <label>Start date</label>
+                    <label className="field-labels"><b>Start date</b></label>
                     <input
                       type="date"
                       name="startDate"
@@ -101,7 +102,7 @@ const LeaveRequestPopup = ({ onClose }) => {
                 </td>
                 <td colSpan="1" style={{ width: "45%" }}>
                   <div className="form-group">
-                    <label>End date</label>
+                    <label className="field-labels"><b>End date</b></label>
                     <input
                       type="date"
                       name="endDate"
@@ -122,22 +123,27 @@ const LeaveRequestPopup = ({ onClose }) => {
                       value={formData.reason}
                       onChange={handleChange}
                       required
-                      style={{backgroundColor: "white", resize: "none", height: "1.5em", width: "100%"}}
+                      style={{backgroundColor: "white", resize: "none", height: "1.2em", width: "100%"}}
                     />
                   </div>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <h4>Supporting documents</h4>
+                  <h4 style={{marginBottom: "40px"}}>Supporting documents</h4>
                 </td>
                 <td>
                   <div className="form-group" style={{ width: "200px" }}>
+                    <label htmlFor="file-upload" style={{ cursor: "pointer" }}>
+                      <img src={AttachFile} alt="Attach File" style={{ width: "116px", height: "32px" }} />
+                    </label>
                     <input
+                      id="file-upload"
                       type="file"
                       name="file"
                       onChange={handleFileChange}
-                      accept=".pdf,.doc,.docx,.jpg,.png" 
+                      accept=".pdf,.doc,.docx,.jpg,.png"
+                      style={{ display: "none" }}
                     />
                   </div>
                 </td>
@@ -148,7 +154,7 @@ const LeaveRequestPopup = ({ onClose }) => {
                     <button className="close-button" type="button" onClick={onClose} >
                       <b>Close</b>
                     </button>
-                    <button className="submit-button" type="submit">
+                    <button className="submit-button" type="submit" >
                       Send request
                     </button>
                   </div>
