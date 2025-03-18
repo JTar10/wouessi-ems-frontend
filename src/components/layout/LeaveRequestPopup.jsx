@@ -74,10 +74,10 @@ const LeaveRequestPopup = ({ onClose }) => {
                 </div>
               </div> {/*row*/}
                 <div>
-                  <hr style={{ width: "100%", marginTop: "20px", marginBottom: "30px", opacity: 0.25 }} />
+                  <hr style={{width: "100%", marginTop: "20px", marginBottom: "30px", opacity: 0.25 }} />
                 </div>
               <div> {/*row*/}
-                <div className="form-group" style={{ width: "100%" }}>
+                <div className="form-group" style={{ width: "95.5%" }}>
                   <label className="field-labels"><b>Employee's Name</b></label>
                   <textarea
                     style={{ backgroundColor: "white", resize: "none", height: "1.2em", width: "100%" }}
@@ -89,7 +89,7 @@ const LeaveRequestPopup = ({ onClose }) => {
                 </div>
               </div > 
               <div style={{display: "flex"}}> {/*row*/}
-                <div className="form-group" style={{ width: "40%" }}>
+                <div className="form-group" style={{ width: "38%" }}>
                   <label className="field-labels"><b>Start Date</b></label>
                   <input
                     type="date"
@@ -100,10 +100,10 @@ const LeaveRequestPopup = ({ onClose }) => {
                     style={{ backgroundColor: "white" }}
                   />
                 </div>
-                <div style={{ width: "20%", textAlign: "center", verticalAlign: "middle" }}>
-                  <p style={{ marginTop: "30px", marginLeft: "20px" }}>to</p>
+                <div style={{ width: "19.5%", textAlign: "center", verticalAlign: "middle" }}>
+                  <p style={{ marginTop: "30px", marginLeft: "18px" }}>to</p>
                 </div>
-                <div className="form-group" style={{ width: "40%" }}>
+                <div className="form-group" style={{ width: "38%" }}>
                   <label className="field-labels"><b>End Date</b></label>
                   <input
                     type="date"
@@ -123,7 +123,7 @@ const LeaveRequestPopup = ({ onClose }) => {
                     value={formData.reason}
                     onChange={handleChange}
                     required
-                    style={{ backgroundColor: "white", resize: "none", height: "1.2em", width: "100%" }}
+                    style={{ backgroundColor: "white", resize: "none", height: "1.2em", width: "95.5%" }}
                   />
                 </div>
               </div>
@@ -145,12 +145,12 @@ const LeaveRequestPopup = ({ onClose }) => {
                   />
                 </div>
               </div>
-              <div className="form-actions"> {/*row*/}
-                <div style={{display: "flex"}}>
+              <div className="form-group" style={{display: "flex", justifyContent: "right", width: "100%"}}> {/*row*/}
+                <div>
                   <button className="close-button" type="button" onClick={onClose} >
                     <b>Close</b>
                   </button>
-                  <button className="submit-button" type="submit">
+                  <button className="submit-button" style={{marginLeft: "20px"}}>
                     Send Request
                   </button>
                 </div>

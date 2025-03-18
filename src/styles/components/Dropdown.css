@@ -19,13 +19,15 @@
 }
 
 .dropdown-select {
-    width: 75%;
+    width: 72%;
     padding-left: 15px;
     padding-right: 1px;
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 14px;
-    border: 1px solid #ccc;
+    font-weight: bold;
+    font-family: sans-serif;
+    border: 2px solid #ccc;
     color: #2703A5;
     border-color: #2703A5;
     background-color: white;
